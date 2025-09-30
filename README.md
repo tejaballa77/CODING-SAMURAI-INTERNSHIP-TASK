@@ -1,4 +1,4 @@
-# 📊 Telco Customer Churn Prediction
+# 1. 📊 Telco Customer Churn Prediction
 
 ## Project Overview
 The Telco Customer Churn Prediction project aims to predict whether a customer will leave a telecom service provider. Predicting churn helps businesses retain customers, optimize marketing strategies, and improve overall customer satisfaction. This project leverages machine learning to classify customers into churned and non-churned categories.
@@ -65,8 +65,72 @@ Multiple classification models were trained and evaluated:
 **Hashtags:**  
 #DataAnalysis #MachineLearning #ChurnPrediction #BusinessAnalytics #Python #Classification #CustomerRetention
 
-## How to Run the App
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/Telco_Churn_App.git
+2. # 🐦 Twitter Sentiment Analysis
+
+## Project Overview
+The Twitter Sentiment Analysis project aims to classify tweets into positive, negative, or neutral sentiments. Understanding public sentiment on social media helps businesses, policymakers, and researchers gauge opinions, track trends, and make informed decisions. This project leverages Natural Language Processing (NLP) and machine learning for sentiment classification.
+
+---
+
+## Dataset
+The dataset contains real tweets from users, including their sentiment labels. Some important columns:
+
+- `twitter_id` – Unique ID for each tweet  
+- `airline_sentiment` – Target variable (positive, negative, neutral)  
+- `text` – The actual tweet text  
+- `retweet_count` – Number of times the tweet was retweeted  
+- `airline` – Airline related to the tweet  
+- Other metadata: `tweet_coord`, `tweet_created`, `tweet_location`, `user_timezone`  
+
+---
+
+## Data Preprocessing
+Data cleaning and preprocessing steps performed:
+
+1. **Text cleaning** – Removed punctuation, numbers, URLs, and special characters.  
+2. **Lowercasing** – Converted all text to lowercase for uniformity.  
+3. **Tokenization** – Split text into individual words (tokens).  
+4. **Stopword removal** – Removed common words like “the”, “is”, “and” that do not add meaning.  
+5. **Vectorization** – Converted text into numeric format using techniques like TF-IDF.  
+6. **Train-test split** – Divided the dataset into training and testing sets for model evaluation.  
+
+---
+
+## Machine Learning Models
+Multiple models were trained and evaluated for sentiment classification:
+
+1. **Logistic Regression** – Simple linear model for multi-class classification.  
+2. **Multinomial Naive Bayes** – Suitable for text classification and categorical features.  
+3. **Support Vector Classifier (SVC)** – Effective for high-dimensional text data.  
+4. **Random Forest Classifier** – Ensemble model improving prediction performance.  
+
+### Model Evaluation Metrics
+- **Accuracy** – Overall correctness of predictions.  
+- **Precision** – How many predicted positives were actually positive.  
+- **Recall** – How many actual positives were correctly identified.  
+- **F1-score** – Balance between precision and recall.  
+- **Confusion Matrix** – Visualization of correct and incorrect predictions for each sentiment class.  
+
+---
+
+## Insights
+- Most negative tweets were related to service issues.  
+- Positive tweets often contained praise or good experiences.  
+- Neutral tweets were informational or general statements.  
+- Logistic Regression and Random Forest provided reliable classification performance.  
+
+---
+
+## Skills Learned
+- Text preprocessing and cleaning for NLP  
+- Feature extraction from text (TF-IDF, Bag of Words)  
+- Multi-class classification with machine learning models  
+- Evaluating model performance using precision, recall, F1-score, and confusion matrix  
+- Drawing actionable insights from social media data  
+
+---
+
+**Hashtags:**  
+#DataAnalysis #MachineLearning #SentimentAnalysis #NLP #Python #TextMining #BusinessInsights #TwitterAnalytics
+
 
